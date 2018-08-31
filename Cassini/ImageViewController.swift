@@ -9,8 +9,14 @@
 import UIKit
 
 class ImageViewController: UIViewController {
+    
+    var imageView = UIImageView();
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!{
+        didSet{
+            scrollView.addSubview(imageView)
+        }
+    }
     
     var imageURL: URL?{
         didSet{
@@ -18,6 +24,17 @@ class ImageViewController: UIViewController {
             if view.window != nil { // check if you're on screen or viewDidAppear
                 fetchImage()
             }
+        }
+    }
+    
+    private var image: UIImage? {
+        get{
+            return imageView.image
+        }
+        set{
+            imageView.image = newValue;
+            imageView.sizeToFit();
+            scrollView.contentSize = imageView.frame.size;
         }
     }
     
@@ -32,7 +49,7 @@ class ImageViewController: UIViewController {
         if let url = imageURL {
             let urlContents = try? Data(contentsOf: url)
             if let imageData = urlContents {
-                imageView.image = UIImage(data: imageData)
+                image = UIImage(data: imageData)
             }
         }
     }
