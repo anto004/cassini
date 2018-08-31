@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, UIScrollViewDelegate{
     
     var imageView = UIImageView();
 
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{
+            scrollView.minimumZoomScale = 1/25;
+            scrollView.maximumZoomScale = 1.0;
+            
+            scrollView.delegate = self;
+            
             scrollView.addSubview(imageView)
         }
     }
@@ -59,6 +64,10 @@ class ImageViewController: UIViewController {
         if imageURL == nil {
             imageURL = DemoURLs.stanford;
         }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView; // the view you want to zoom on
     }
     
 }
