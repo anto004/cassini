@@ -13,6 +13,7 @@
 		F82C399F2138A9BF0096866B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82C399D2138A9BF0096866B /* LaunchScreen.storyboard */; };
 		F82C39A82138AA4B0096866B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C39A72138AA4B0096866B /* ImageViewController.swift */; };
 		F82C39AA2138B3680096866B /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82C39A92138B3680096866B /* oval.jpg */; };
+		F86ACF802139F0EB0074A7F8 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86ACF7F2139F0EB0074A7F8 /* CassiniViewController.swift */; };
 		F89630292138B9AF0053F63B /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89630282138B9AF0053F63B /* DemoURLs.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		F82C39A02138A9BF0096866B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F82C39A72138AA4B0096866B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F82C39A92138B3680096866B /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
+		F86ACF7F2139F0EB0074A7F8 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		F89630282138B9AF0053F63B /* DemoURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			children = (
 				F82C39A62138A9D00096866B /* SupportingFIles */,
 				F82C39982138A9BE0096866B /* Main.storyboard */,
+				F86ACF7F2139F0EB0074A7F8 /* CassiniViewController.swift */,
 				F82C399B2138A9BF0096866B /* Assets.xcassets */,
 				F82C39A02138A9BF0096866B /* Info.plist */,
 				F82C39A92138B3680096866B /* oval.jpg */,
@@ -153,6 +156,7 @@
 				F82C39A82138AA4B0096866B /* ImageViewController.swift in Sources */,
 				F82C39952138A9BE0096866B /* AppDelegate.swift in Sources */,
 				F89630292138B9AF0053F63B /* DemoURLs.swift in Sources */,
+				F86ACF802139F0EB0074A7F8 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate{
         set{
             imageView.image = newValue;
             imageView.sizeToFit();
-            scrollView.contentSize = imageView.frame.size;
+            scrollView?.contentSize = imageView.frame.size;
         }
     }
     
