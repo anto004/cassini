@@ -18,16 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hd-b9-ntI">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-KF-8aI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="812" translatesAutoresizingMaskIntoConstraints="NO" id="0hd-b9-ntI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0hd-b9-ntI" secondAttribute="bottom" id="AJS-fL-y1g"/>
+                                    <constraint firstItem="0hd-b9-ntI" firstAttribute="leading" secondItem="Pp8-KF-8aI" secondAttribute="leading" id="Dd4-GW-UgR"/>
+                                    <constraint firstItem="0hd-b9-ntI" firstAttribute="top" secondItem="Pp8-KF-8aI" secondAttribute="top" id="LAg-A0-NhE"/>
+                                    <constraint firstItem="0hd-b9-ntI" firstAttribute="trailing" secondItem="Pp8-KF-8aI" secondAttribute="trailing" id="ZYo-7v-FU1"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0hd-b9-ntI" firstAttribute="trailing" secondItem="kt5-7f-Acs" secondAttribute="trailing" id="HO2-PW-Ou6"/>
-                            <constraint firstItem="0hd-b9-ntI" firstAttribute="leading" secondItem="kt5-7f-Acs" secondAttribute="leading" id="MGO-8c-jza"/>
-                            <constraint firstItem="0hd-b9-ntI" firstAttribute="top" secondItem="kt5-7f-Acs" secondAttribute="top" id="QOk-dx-2bM"/>
-                            <constraint firstAttribute="bottom" secondItem="0hd-b9-ntI" secondAttribute="bottom" id="zJL-di-FzO"/>
+                            <constraint firstAttribute="bottom" secondItem="Pp8-KF-8aI" secondAttribute="bottom" id="2YK-4l-P3s"/>
+                            <constraint firstItem="Pp8-KF-8aI" firstAttribute="top" secondItem="kt5-7f-Acs" secondAttribute="top" id="Bwj-8Y-bb2"/>
+                            <constraint firstItem="Pp8-KF-8aI" firstAttribute="leading" secondItem="kt5-7f-Acs" secondAttribute="leading" id="OFA-Sh-5X4"/>
+                            <constraint firstItem="Pp8-KF-8aI" firstAttribute="trailing" secondItem="kt5-7f-Acs" secondAttribute="trailing" id="Opa-og-XmX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vLu-6p-zve"/>
                     </view>
