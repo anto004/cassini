@@ -27,7 +27,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Cassini"/>
                                         <connections>
-                                            <segue destination="Pdo-ew-kYt" kind="showDetail" identifier="Cassini" id="15x-yw-bty"/>
+                                            <segue destination="jeA-wo-NQH" kind="showDetail" identifier="Cassini" id="15x-yw-bty"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPs-ar-7B5">
@@ -35,7 +35,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Earth"/>
                                         <connections>
-                                            <segue destination="Pdo-ew-kYt" kind="showDetail" identifier="Earth" id="KaM-MP-9Xw"/>
+                                            <segue destination="jeA-wo-NQH" kind="showDetail" identifier="Earth" id="KaM-MP-9Xw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGY-84-p7m">
@@ -43,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Saturn"/>
                                         <connections>
-                                            <segue destination="Pdo-ew-kYt" kind="showDetail" identifier="Saturn" id="ChI-cL-1zz"/>
+                                            <segue destination="jeA-wo-NQH" kind="showDetail" identifier="Saturn" id="ChI-cL-1zz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -89,6 +89,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vLu-6p-zve"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nL0-nx-7Ki"/>
                     <connections>
                         <outlet property="scrollView" destination="Pp8-KF-8aI" id="aoc-TD-zHq"/>
                         <outlet property="spinner" destination="3wh-Vg-Qjb" id="PbW-lm-61i"/>
@@ -96,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgo-Sh-TaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714" y="953"/>
+            <point key="canvasLocation" x="228" y="952.46305418719214"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="GOV-EW-gHj">
@@ -104,7 +105,7 @@
                 <splitViewController id="GQL-a0-SOf" sceneMemberID="viewController">
                     <connections>
                         <segue destination="uq0-QM-GBI" kind="relationship" relationship="masterViewController" id="VVl-Tt-rgs"/>
-                        <segue destination="Pdo-ew-kYt" kind="relationship" relationship="detailViewController" id="ciG-Ap-9US"/>
+                        <segue destination="jeA-wo-NQH" kind="relationship" relationship="detailViewController" id="ciG-Ap-9US"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNG-tp-bLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,8 +130,26 @@
             </objects>
             <point key="canvasLocation" x="-714.39999999999998" y="156.65024630541873"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JWy-VJ-3NK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jeA-wo-NQH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hPw-21-mj4">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pdo-ew-kYt" kind="relationship" relationship="rootViewController" id="4lv-Vr-wH3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdd-Ap-8Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714.39999999999998" y="952.46305418719214"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ChI-cL-1zz"/>
+        <segue reference="KaM-MP-9Xw"/>
     </inferredMetricsTieBreakers>
 </document>
