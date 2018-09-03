@@ -65,7 +65,6 @@
         <!--Image View Controller-->
         <scene sceneID="quM-XS-SVF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hgo-Sh-TaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Pdo-ew-kYt" customClass="ImageViewController" customModule="Cassini" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kt5-7f-Acs" customClass="Image">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -74,20 +73,28 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-KF-8aI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3wh-Vg-Qjb">
+                                <rect key="frame" x="169" y="415" width="37" height="37"/>
+                                <color key="color" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Pp8-KF-8aI" secondAttribute="bottom" id="2YK-4l-P3s"/>
+                            <constraint firstItem="3wh-Vg-Qjb" firstAttribute="centerX" secondItem="vLu-6p-zve" secondAttribute="centerX" id="5HV-u9-Jm9"/>
                             <constraint firstItem="Pp8-KF-8aI" firstAttribute="top" secondItem="kt5-7f-Acs" secondAttribute="top" id="Bwj-8Y-bb2"/>
                             <constraint firstItem="Pp8-KF-8aI" firstAttribute="leading" secondItem="kt5-7f-Acs" secondAttribute="leading" id="OFA-Sh-5X4"/>
                             <constraint firstItem="Pp8-KF-8aI" firstAttribute="trailing" secondItem="kt5-7f-Acs" secondAttribute="trailing" id="Opa-og-XmX"/>
+                            <constraint firstItem="3wh-Vg-Qjb" firstAttribute="centerY" secondItem="vLu-6p-zve" secondAttribute="centerY" id="gV1-b9-NWn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vLu-6p-zve"/>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="Pp8-KF-8aI" id="aoc-TD-zHq"/>
+                        <outlet property="spinner" destination="3wh-Vg-Qjb" id="PbW-lm-61i"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hgo-Sh-TaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-714" y="953"/>
         </scene>
